@@ -1,6 +1,7 @@
 name: Hello World workflow
 
 on: push
+    workflow_dispatch
 
 jobs: 
   hello-job:
@@ -8,3 +9,6 @@ jobs:
     steps:
     - name: Echo text
       run: echo "Hello, world!"
+    - name: Run a multi-line script
+      run: echo Add other actions to build,
+           echo test, and deploy your project.
